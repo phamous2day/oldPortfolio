@@ -1,0 +1,118 @@
+'Project:  Project 7
+'Programmer:  David Pham
+'Date:        11/23/2010  
+'Description: This calculator processes the costs of car rentals
+Public Class FunctionsCalculator
+    Private Function CalculateTotalDailyCharge(ByVal NumberOfDaysInteger As Integer, ByVal ChargePerDayDecimal As Decimal) As Decimal
+        Return NumberOfDaysInteger * ChargePerDayDecimal
+    End Function
+    Private Function CalculateTotalMileageCharge(ByVal MileageDecimal As Decimal, ByVal ChargePerMileDecimal As Decimal) As Decimal
+        Return MileageDecimal * ChargePerMileDecimal
+    End Function
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+
+        If (MileageTextBox.Text) <= 0 Then
+            MessageBox.Show("Please input a numeric value greater than 0", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            MileageTextBox.Focus()
+            MileageTextBox.SelectAll()
+            Return
+        End If
+
+        If (CustomerNumberTextBox.Text) <= 0 Then
+            MessageBox.Show("Please input a 4-digit ID number", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            MileageTextBox.Focus()
+            MileageTextBox.SelectAll()
+            Return
+        End If
+
+        If (CartypeTextBox.Text) <= 0 Then
+            MessageBox.Show("Please enter a Car Type Number: 1, 2, or 3", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            MileageTextBox.Focus()
+            MileageTextBox.SelectAll()
+            Return
+        End If
+
+        If (NumberOfDaysTextBox.Text) <= 0 Then
+            MessageBox.Show("Please enter the number of days you wish to rent the car", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            MileageTextBox.Focus()
+            MileageTextBox.SelectAll()
+            Return
+        End If
+
+
+        Dim CustomerNumberString As String = CustomerNumberTextBox.Text
+        Dim CarTypeInteger As Integer = CartypeTextBox.Text
+        Dim MileageDecimal As Decimal = MileageTextBox.Text
+        Dim NumberOfDaysInteger As Integer = NumberOfDaysTextBox.Text
+        Dim InsuranceCostDecimal As Decimal
+
+
+        Dim ChargePerDayDecimal As Decimal
+        Dim ChargePerMileDecimal As Decimal
+        Dim TotalChargesDecimal As Decimal
+
+
+
+        Const CHARGE_PER_DAY_1_Decimal As Decimal = 20.0
+        Const CHARGE_PER_DAY_2_Decimal As Decimal = 25.0
+        Const CHARGE_PER_DAY_3_Decimal As Decimal = 32.0
+
+        Const CHARGE_PER_MILE_1_Decimal As Decimal = 0.25
+        Const CHARGE_PER_MILE_2_Decimal As Decimal = 0.35
+        Const CHARGE_PER_MILE_3_Decimal As Decimal = 0.4
+        Const TWENTY_PERCENT_Decimal As Decimal = 0.2
+
+
+        Select Case CarTypeInteger
+            Case 1
+                ChargePerDayDecimal = CHARGE_PER_DAY_1_Decimal
+                ChargePerMileDecimal = CHARGE_PER_MILE_1_Decimal
+            Case 2
+                ChargePerDayDecimal = CHARGE_PER_DAY_2_Decimal
+                ChargePerMileDecimal = CHARGE_PER_MILE_2_Decimal
+            Case Else
+                ChargePerDayDecimal = CHARGE_PER_DAY_3_Decimal
+                ChargePerMileDecimal = CHARGE_PER_MILE_3_Decimal
+        End Select
+
+
+        Dim TotalDailyChargeDecimal As Decimal = CalculateTotalDailyCharge(ChargePerDayDecimal, NumberOfDaysInteger)
+        TotalDailyChargeLabel.Text = TotalDailyChargeDecimal.ToString("C")
+ 
+        Dim TotalMileageChargeDecimal As Decimal = CalculateTotalMileageCharge(MileageDecimal, ChargePerMileDecimal)
+        TotalMileageChargeLabel.Text = TotalMileageChargeDecimal.ToString("C")
+
+        If TotalDailyChargeDecimal * TWENTY_PERCENT_Decimal < 10 Then
+            InsurancePlanLabel.Text = 1
+            InsuranceCostDecimal = 10
+        ElseIf TotalDailyChargeDecimal * TWENTY_PERCENT_Decimal <= 15 + NumberOfDaysInteger Then
+            InsurancePlanLabel.Text = 1
+            InsuranceCostDecimal = TotalDailyChargeDecimal * TWENTY_PERCENT_Decimal
+        Else
+            InsuranceCostDecimal = 15 + NumberOfDaysInteger
+            InsurancePlanLabel.Text = 2
+        End If
+        InsuranceCostLabel.Text = InsuranceCostDecimal.ToString("C")
+
+        TotalChargesDecimal = TotalDailyChargeDecimal + TotalMileageChargeDecimal + InsuranceCostDecimal
+        TotalChargesLabel.Text = TotalChargesDecimal.ToString("C")
+
+
+    End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        CustomerNumberTextBox.Clear()
+        CartypeTextBox.Clear()
+        MileageTextBox.Clear()
+        NumberOfDaysTextBox.Clear()
+        TotalDailyChargeLabel.Text = ""
+        TotalMileageChargeLabel.Text = ""
+        InsurancePlanLabel.Text = ""
+        InsuranceCostLabel.Text = ""
+        TotalChargesLabel.Text = ""
+    End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        Me.Close()
+    End Sub
+End Class
