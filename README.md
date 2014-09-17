@@ -1,4 +1,362 @@
-phamous2day-.github.io
-======================
+<!DOCTYPE html>
 
-My Website
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width"/>
+<title>David Pham</title>
+<!-- CSS Files-->
+<link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" href="stylesheets/homepage.css"><!-- homepage stylesheet -->
+<link rel="stylesheet" href="stylesheets/skins/teal.css"><!-- skin color -->
+<link rel="stylesheet" href="stylesheets/responsive.css">
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->    
+</head>
+<body>
+<!-- HIDDEN PANEL 
+================================================== -->
+<div id="panel">
+	<div class="row">
+		<div class="twelve columns">
+			<img src="images/info.png" class="pics" alt="info">
+			<div class="infotext">
+				Thank you for visiting my website! Hope you have fun!
+			</div>
+		</div>
+	</div>
+</div>
+<p class="slide">
+	<a href="#" class="btn-slide"></a>
+</p>
+<!-- HEADER
+================================================== -->
+<div class="row">	
+		<div class="four columns">
+			<div class="logo">
+				<a href="index.html"><h4>David Pham</h4></a>
+			</div>
+		</div>
+		<div class="eight columns noleftmarg">		
+			<nav id="nav-wrap">
+				<ul class="nav-bar sf-menu">
+				
+					<li class="current">
+					<a href="index.html">Home</a>
+											</li>
+					
+					<li>
+					<a href="#">AmeriCorps</a>
+						<ul>								
+						<li><a href="portofoliodetail.html">Projects</a></li>
+						</ul>
+					</li>
+					
+					<li>
+					<a href="#">Journalism</a>
+						<ul>
+						<li><a href="portofolio2.html">Stories</a></li>
+						</ul>
+					</li>
+					
+					<li>
+					<a href="#">About</a>
+						<ul>
+						<li><a href="about.html">Me</a></li>
+						<li><a href="services.html">Specialties</a></li>						
+						</ul>
+					</li>
+					
+					<li>
+					<a href="#">Programming</a>
+						<ul>
+						<li><a href="elements.html">Code Samples</a></li>
+						</ul>
+					</li>
+					
+					<li>
+					<a href="contact.html">Contact</a>
+					</li>
+					
+				</ul>
+				</nav>
+		</div>	
+</div>
+<div class="clear">
+</div>
+<!-- SLIDER 
+================================================== -->
+<div id="ei-slider" class="ei-slider">
+	<ul class="ei-slider-large">
+		<li>
+		<img src="img/1.jpg" alt="image01" class="responsiveslide">
+		<div class="ei-title">
+			<h2>Growing up in</h2>
+			<h3>Hawaii</h3>
+		</div>
+		</li>
+		<li>
+		<img src="img/2.jpg" alt="image02" class="responsiveslide">
+		<div class="ei-title">
+			<h2>Interning with</h2>
+			<h3>Honolulu Advertiser</h3
+		</div>
+		</li>
+		<li>
+		<img src="img/3.jpg" alt="image03" class="responsiveslide">
+		<div class="ei-title">
+			<h2>Studying abroad in</h2>
+			<h3>Singapore</h3>
+		</div>
+		</li>
+		<li>
+		<img src="img/4.jpg" alt="image04" class="responsiveslide">
+		<div class="ei-title">
+			<h2>Exploring</h2>
+			<h3>South-East Asia</h3>
+		</div>
+		</li>
+		<li>
+		<img src="img/5.jpg" alt="image05" class="responsiveslide">
+		<div class="ei-title">
+			<h2>Getting my</h2>
+			<h3>Bachelor's Degree</h3>
+		</div>
+		</li>
+		<li>
+		<img src="img/6.jpg" alt="image06" class="responsiveslide">
+		<div class="ei-title">
+			<h2>Giving back through</h2>
+			<h3>AmeriCorps VISTA</h3>
+		</div>
+		</li>
+		<li>
+		<img src="img/7.jpg" alt="image07" class="responsiveslide">
+		<div class="ei-title">
+			<h2>Discovering interest in</h2>
+			<h3>Programming</h3>
+		</div>
+		</li>
+		<li>
+		<img src="img/8.jpg" alt="image08" class="responsiveslide">
+		<div class="ei-title">
+			<h2>Building work experience at</h2>
+			<h3>Rocket Science Group</h3>
+		</div>
+		</li>
+		<li>
+		<img src="img/9.jpg" alt="image09" class="responsiveslide">
+		<div class="ei-title">
+			<h2>Learning skills at</h2>
+			<h3>Georgia State University</h3>
+		</div>
+		</li>
+		<li>
+		<img src="img/10.jpg" alt="image10" class="responsiveslide">
+		<div class="ei-title">
+			<h2>Loving my</h2>
+			<h3>Life</h3>
+		</div>
+		</li>
+	</ul>
+	<!-- slider-thumbs -->
+	<ul class="ei-slider-thumbs">
+		<li class="ei-slider-element">Current</li>
+		<li><a href="#">Slide 1</a><img src="img/1(1).jpg" class="slideshowthumb" alt="thumb01"/></li>
+		<li><a href="#">Slide 2</a><img src="img/2(1).jpg" class="slideshowthumb" alt="thumb02"/></li>
+		<li><a href="#">Slide 3</a><img src="img/3(1).jpg" class="slideshowthumb" alt="thumb03"/></li>
+		<li><a href="#">Slide 4</a><img src="img/4(1).jpg" class="slideshowthumb" alt="thumb04"/></li>
+		<li><a href="#">Slide 5</a><img src="img/5(1).jpg" class="slideshowthumb" alt="thumb05"/></li>
+		<li><a href="#">Slide 6</a><img src="img/6(1).jpg" class="slideshowthumb" alt="thumb06"/></li>
+		<li><a href="#">Slide 7</a><img src="img/7(1).jpg" class="slideshowthumb" alt="thumb07"/></li>
+		<li><a href="#">Slide 8</a><img src="img/8(1).jpg" class="slideshowthumb" alt="thumb08"/></li>		
+		<li><a href="#">Slide 9</a><img src="img/9(1).jpg" class="slideshowthumb" alt="thumb09"/></li>
+		<li><a href="#">Slide 10</a><img src="img/10(1).jpg" class="slideshowthumb" alt="thumb10"/></li>
+	</ul>	
+</div>
+<div class="minipause">
+</div>
+<!-- SUBHEADER
+================================================== -->
+<div id="subheader">
+	<div class="row">
+		<div class="twelve columns">
+			<p class="text-center">
+				 "Many people are alive but don't touch the miracle of being alive." -  Thích Nhất Hạnh
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ANIMATED COLUMNS 
+================================================== -->
+<div class="row">
+	<div class="twelve columns">
+		<ul class="ca-menu">
+			<li>
+			<a href="http://phamous2day.tumblr.com">
+			<span class="ca-icon">F</span>
+			<div class="ca-content">
+				<h2 class="ca-main">Journalism<br/> Collection</h2>
+				<h3 class="ca-sub">Print, Videos, Multimedia</h3>
+			</div>
+			</a>
+			</li>
+			<li>
+			<a href="#">
+			<span class="ca-icon">H</span>
+			<div class="ca-content">
+				<h2 class="ca-main">Programming<br/> Projects</h2>
+				<h3 class="ca-sub">Java and Visual Basic</h3>
+			</div>
+			</a>
+			</li>
+			<li>
+			<a href="#">
+			<span class="ca-icon">N</span>
+			<div class="ca-content">
+				<h2 class="ca-main">AmeriCorps<br/> Accomplishments</h2>
+				<h3 class="ca-sub">Descriptions of goals reached</h3>
+			</div>
+			</a>
+			</li>
+			<li>
+			<a href="#">
+			<span class="ca-icon">K</span>
+			<div class="ca-content">
+				<h2 class="ca-main">Find me<br/> Online</h2>
+				<h3 class="ca-sub">Follow my updates</h3>
+			</div>
+			</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- CONTENT 
+================================================== -->
+<div class="row">
+	<div class="twelve columns">
+		<div class="centersectiontitle">
+			<h4>My Work</h4>
+		</div>
+	</div>
+	<div class="four columns">
+		<h5>Journalism</h5>
+		<p>
+			 I began as a news editor for my high school paper and transitioned into writing for the college paper for money. After one article, I was promoted associate features editor and really enjoyed the field. 
+		</p>
+
+	</div>
+	<div class="four columns">
+		<h5>Programming</h5>
+		<p>
+			 After experiencing how much impact open-source technologies and ideas can have on a community, I wanted to refine my programming knowledge with hopes of making a difference in the world. I'm especially interested in instructional design tools.
+		</p>
+		
+	</div>
+	<div class="four columns">
+		<h5>AmeriCorps VISTA</h5>
+		<p>
+			 Desiring to build work experience in the technology field while giving back to the community, I dedicated a year of my life to AmeriCorps VISTA. My service site was a school that catered refugee students in Georgia.
+		</p>
+		
+	</div>
+</div>
+<div class="hr">
+</div>
+<!-- TESTIMONIALS 
+================================================== -->
+<div class="row">
+	<div class="twelve columns">
+		<div id="testimonials">
+			<blockquote>
+				<p>
+					 "Make things happen, don't let things happen to you." <cite>My high school history teacher</cite>
+				</p>
+			</blockquote>
+			<blockquote>
+				<p>
+					 "When we hit our lowest point, we are open to the greatest change" - Aang</cite>
+				</p>
+			</blockquote>
+			<blockquote>
+				<p>
+					 "Are you so busy fighting you cannot see your own ship has set sail?." <cite>Iroh</cite>
+				</p>
+			</blockquote>
+		</div>
+		<!--end testimonials-->
+	</div>
+</div>
+<!-- TWITTER
+================================================== -->
+<div class="tweetarea">
+	<div class="tweettext">
+		<div class="row">
+			<div class="twelve columns">
+				<div class="tweet">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- FOOOTER 
+================================================== -->
+<div id="footer">
+	<footer class="row">
+	<p class="back-top floatright">
+		<a href="#top"><span></span></a>
+	</p>
+	<div class="four columns">
+		<h1>ABOUT ME</h1>
+		 Raised in Hawaii; curently living in Georgia.
+	</div>
+
+	<div class="four columns">
+		<h1>GET SOCIAL</h1>
+		<a href="http://www.youtube.com/user/safari4stories/videos"><div class="social youtube"> </div></a>
+		
+		<a href="http://twitter.com/phamous2day"> <div class="social twitter">
+		</div></a>
+		<a href="mailto:phamous2day@outlook.com"><div class="social email"> </div>
+			</a>
+			<a href="http://phamous2day.tumblr.com"><div class="social tumblr"></div>
+			</a>
+		<a href="http://www.linkedin.com/in/phamdavid">
+		<div class="social linkedin"> </div>
+			</a></div>
+	
+	<div class="four columns">
+		
+		</div>
+	</div>
+	</footer>
+</div>
+<div class="copyright">
+	<div class="row">
+		<div class="six columns">
+			 &copy;<span class="small"> Copyright 2014 David Pham</span>
+		</div>
+		
+	</div>
+</div>
+<!-- JAVASCRIPTS 
+================================================== -->
+<!-- Javascript files placed here for faster loading -->
+<script src="javascripts/foundation.min.js"></script>   
+<script src="javascripts/jquery.easing.1.3.js"></script>
+<script src="javascripts/elasticslideshow.js"></script>
+<script src="javascripts/jquery.carouFredSel-6.0.5-packed.js"></script>
+<script src="javascripts/jquery.cycle.js"></script>
+<script src="javascripts/app.js"></script>
+<script src="javascripts/modernizr.foundation.js"></script>
+<script src="javascripts/slidepanel.js"></script>
+<script src="javascripts/scrolltotop.js"></script>
+<script src="javascripts/hoverIntent.js"></script>
+<script src="javascripts/superfish.js"></script>
+<script src="javascripts/responsivemenu.js"></script>
+</body>
+</html>
