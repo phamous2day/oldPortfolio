@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width"/>
+<title>David Pham</title>
+<!-- Included CSS Files-->
+<link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" href="stylesheets/prettyphoto.css"><!-- for gallery -->
+<link rel="stylesheet" href="stylesheets/skins/teal.css"><!-- skin color -->
+<link rel="stylesheet" href="stylesheets/responsive.css">
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+<!-- HIDDEN PANEL 
+================================================== -->
+<div id="panel">
+	<div class="row">
+		<div class="twelve columns">
+			<img src="images/info.png" class="pics" alt="info">
+			<div class="infotext">
+				 Moaarr ASCII Art!
+			</div>
+		</div>
+	</div>
+</div>
+<p class="slide">
+	<a href="#" class="btn-slide"></a>
+</p>
+<!-- HEADER
+================================================== -->
+<div class="row">	
+		<div class="four columns">
+			<div class="logo">
+				<a href="index.html"><h4>David Pham</h4></a>
+			</div>
+		</div>
+		<div class="eight columns noleftmarg">		
+			<nav id="nav-wrap">
+				<ul class="nav-bar sf-menu">
+				
+					<li class="current">
+					<a href="index.html">Home</a>
+						
+					</li>
+					
+					<li>
+					<a href="#">AmeriCorps</a>
+						<ul>
+									
+						<li><a href="portofoliodetail.html">Project</a></li>
+						</ul>
+					</li>
+					
+					<li>
+					<a href="#">Journalism</a>
+						<ul>
+						<li><a href="portofolio2.html">Stories</a></li>
+						</ul>
+					</li>
+					
+					<li>
+					<a href="#">About</a>
+						<ul>
+						<li><a href="about.html">Me</a></li>
+						<li><a href="services.html">Services</a></li>						
+						</ul>
+					</li>
+					
+					<li>
+					<a href="#">Programming</a>
+						<ul>
+						<li><a href="elements.html">Code Samples</a></li>
+						</ul>
+					</li>
+					
+					<li>
+					<a href="contact.html">Contact</a>
+					</li>
+					
+				</ul>
+				</nav>
+		</div>	
+</div>
+<div class="clear">
+</div>
+<!-- SUBHEADER
+================================================== -->
+<div id="subheader">
+	<div class="row">
+		<div class="twelve columns">
+			<p>
+				 Journalism Collection
+			</p>
+		</div>
+	</div>
+</div>
+<div class="hr">
+</div>
+<!-- CONTENT 
+================================================== -->
+<div class="row">
+	<div class="twelve columns">
+		<!-- CATEGORIES-->
+		<section id="options" class="clearfix">
+		<ul id="filters" class="option-set clearfix" data-option-key="filter">
+		<li><a href="#filter" data-option-value=".castles" class="portofoliobutton">Videos</a></li>
+		<li><a href="#filter" data-option-value="*" class="portofoliobutton selected">Show all</a></li>
+		</ul>
+		</section>
+	</div>
+</div>
+<div id="portofolio" class="row">
+	<!-- Project 1-->
+	<div class="six columns category trains">
+		<h5>Design Work</h5>
+		<p>
+			 These are some graphics I made to help supplement an article.
+		</p>
+		<div class="portofoliothumb">
+			<div class="portofoliothumboverlay">
+				<div class="viewgallery">
+					<!--image here -->
+					<a data-gal="prettyPhoto[gallery]" href="images/temp/folio1.jpg"><img src="images/playgal.png" class="left galleryicon" alt=""> Gallery</a>
+				</div>
+				<div class="inner">
+					<a class="projectdetail" href="portofoliodetail.html">+ Project Details</a>
+				</div>
+			</div>
+			<!-- image here -->
+			<img src="images/temp/folio1.jpg" alt="">
+		</div>
+	</div>
+	<!-- Project 2-->
+	<div class="six columns category castles nature">
+		<h5>AmeriCorps Videos</h5>
+		<p>
+			 View the videos I've created during my time as an AmeriCorps VISTA.
+		</p>
+		<div class="portofoliothumb">
+			<div class="portofoliothumboverlay">
+				<div class="viewgallery">
+					<a data-gal="prettyPhoto[gallery]" href="images/temp/folio2.jpg"><img src="images/playgal.png" class="left galleryicon" alt=""> Gallery</a>
+				</div>
+				<div class="inner">
+					<a class="projectdetail" href="http://vimeo.com/davidpha">+ Project Details</a>
+				</div>
+			</div>
+			<img src="images/temp/folio2.jpg" alt=""/>
+		</div>
+	</div>
+	<!-- Project 3-->
+	<div class="six columns category nature">
+		<h5>Articles</h5>
+		<p>
+			 Read the articles I've written for my college paper, and the city paper.
+		</p>
+		<div class="portofoliothumb">
+			<div class="portofoliothumboverlay">
+				<div class="viewgallery">
+					<a data-gal="prettyPhoto[gallery]" href="images/temp/folio3.jpg"><img src="images/playgal.png" class="left galleryicon" alt=""> Gallery</a>
+				</div>
+				<div class="inner">
+					<a class="projectdetail" href="http://phamous2day.tumblr.com">+ Project Details</a>
+				</div>
+			</div>
+			<img src="images/temp/folio3.jpg" alt=""/>
+		</div>
+	</div>
+	<!-- Project 4-->
+	<div class="six columns category nature castles">
+		<h5>Journalism videos</h5>
+		<p>
+			 Watch the videos I've filmed for Ka Leo O Hawaii and The Honolulu Advertiser.
+		</p>
+		<div class="portofoliothumb">
+			<div class="portofoliothumboverlay">
+				<div class="viewgallery">
+					<a data-gal="prettyPhoto[gallery]" href="images/temp/folio4.jpg"><img src="images/playgal.png" class="left galleryicon" alt=""> Gallery</a>
+				</div>
+				<div class="inner">
+					<a class="projectdetail" href="http://www.youtube.com/user/safari4stories/videos">+ Project Details</a>
+				</div>
+			</div>
+			<img src="images/temp/folio4.jpg" alt=""/>
+		</div>
+	</div>
+</div>
+<div class="hr">
+</div>
+<!-- TWITTER
+================================================== -->
+<div class="tweetarea">
+	<div class="tweettext">
+		<div class="row">
+			<div class="twelve columns">
+				<div class="tweet">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- FOOOTER 
+================================================== -->
+<div id="footer">
+	<footer class="row">
+	<p class="back-top floatright">
+		<a href="#top"><span></span></a>
+	</p>
+	<div class="four columns">
+		<h1>ABOUT ME</h1>
+		 I won "most valued staff member" for my high school paper.
+	</div>
+	<div class="four columns">
+		<h1>GET SOCIAL</h1>
+		<a href="http://www.youtube.com/user/safari4stories/videos"><div class="social youtube"> </div></a>
+		
+		<a href="http://twitter.com/phamous2day"> <div class="social twitter">
+		</div></a>
+		<a href="mailto:dpham13@student.gsu.edu"><div class="social email"> </div>
+			</a>
+			<a href="http://phamous2day.tumblr.com"><div class="social tumblr"></div>
+			</a>
+		<a href="http://www.linkedin.com/in/phamdavid">
+		<div class="social linkedin"> </div>
+			</a></div>
+	<div class="four columns">
+	</div>
+	</footer>
+</div>
+<div class="copyright">
+	<div class="row">
+		<div class="six columns">
+			 &copy;<span class="small"> Copyright 2014 David Pham</span>
+		</div>
+		</div>
+</div>
+<!-- JAVASCRIPTS 
+================================================== -->
+<!-- Javascript files placed here for faster loading -->
+<script src="javascripts/foundation.min.js"></script>
+<script src="javascripts/jquery.cycle.js"></script>
+<script src="javascripts/app.js"></script>
+<script src="javascripts/modernizr.foundation.js"></script>
+<script src="javascripts/slidepanel.js"></script>
+<script src="javascripts/scrolltotop.js"></script>
+<script src="javascripts/hoverIntent.js"></script>
+<script src="javascripts/superfish.js"></script>
+<script src="javascripts/responsivemenu.js"></script>
+<script src="javascripts/jquery.isotope.min.js"></script>
+<script src="javascripts/jquery.prettyPhoto.js"></script>
+<script src="javascripts/custom.js"></script>
+</body>
+</html>
