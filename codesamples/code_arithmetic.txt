@@ -1,0 +1,30 @@
+Public Class LoopExercisesFrom
+    'Created by David Pham of ITS 128
+    Private Sub LoopExercisesFrom_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub CalculateForButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CalculateForButton.Click
+
+        If Not IsNumeric(NumberTextBox.Text) Then
+            MessageBox.Show("Please input a numeric value", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            NumberTextBox.Focus()
+            NumberTextBox.SelectAll()
+            Return
+        End If
+
+        Dim NumberInteger As Integer = NumberTextBox.Text
+        Dim SumInteger As Integer = 0
+        Dim SumODDInteger As Integer = 0
+        Dim SumEvenInteger As Integer = 0
+        Dim AverageDecimal As Decimal = 0
+
+        If NumberInteger < 0 Then
+            MessageBox.Show("Please enter a value greater than 0", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
+            NumberTextBox.Focus()
+            NumberTextBox.SelectAll()
+            Return
+        End If
+
+        For CounterInteger As Integer = 1 To NumberInteger
+            SumInteger = SumInteger + CounterInteger
